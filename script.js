@@ -23,8 +23,8 @@ function myFunction(x) {
     {
       
       video.src = './Images/background1.mp4';
-      image.src = './Images/main-logo1.jpg';
-      images.src = './Images/main-logo1.jpg';
+      image.src = './Images/main-logo1.png';
+      images.src = './Images/main-logo1.png';
       
     }
 
@@ -59,7 +59,7 @@ function myFunction(x) {
 
 
 
-      var countDownDate = new Date("Oct 11,2023 00:00:00:00").getTime();
+      var countDownDate = new Date("February 22,2025 00:00:00:00").getTime();
       console.log(countDownDate);
       var x = setInterval(function () {
         var now = new Date().getTime();

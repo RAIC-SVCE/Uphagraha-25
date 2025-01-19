@@ -14,7 +14,7 @@ function myFunction(x) {
     counter++;
     if(counter==1)
     {
-      video.src = './Images/background2.mp4';
+      video.src = './Images/background8.mp4';
       image.src = './Images/main-logo2.png';
       images.src = './Images/main-logo2.png';
     }
@@ -30,7 +30,7 @@ function myFunction(x) {
 
     else
     {
-      video.src = './Images/background2.mp4';
+      video.src = './Images/background8.mp4';
       image.src = './Images/main-logo2.png';
       images.src = './Images/main-logo2.png';
       counter =1;

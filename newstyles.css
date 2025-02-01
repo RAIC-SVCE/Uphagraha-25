@@ -1114,93 +1114,291 @@ footer .copyright:first-of-type {
       width: 100%;
     }
   }
-  
-@media (max-width: 480px) {
-   
 
-    /*Navigation Bar*/
-.nav-links {
+  @media (max-width: 480px) {
+    /* Center align everything */
+    body {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 0;
+      margin: 0;
+    }
+  
+    /* Navigation Bar */
+    .nav-links {
       display: none; /* Hide desktop links on mobile */
-  }
-
-.mobile-menu-btn {
+    }
+  
+    .mobile-menu-btn {
       display: block; /* Show hamburger menu button on mobile */
-  }
-
-.mobile-menu {
+    }
+  
+    .mobile-menu {
       display: block; /* Enable mobile menu */
-  }
-
-  /*Header*/
-.hero {
-    margin-top: 50px;
-    padding: 1rem; /* Further reduced padding */
-}
-
-.hero h1 {
-    font-size: 1.8rem; /* Smaller font size for mobile screens */
-}
-
-.hero h2 {
-    font-size: 1.4rem; /* Reduced font size for secondary heading */
-}
-
-.subtitle {
-    font-size: 1rem; /* Smaller font for subtitle */
-    margin-bottom: 1rem; /* Tighter spacing */
-}
-
-    /* Countdown container adjusts layout */
-.countdown {
-      flex-direction: row; /* All items on the same line */
+    }
+  
+    /* Header */
+    .hero {
+      margin-top: 50px;
+      padding: 1rem; /* Further reduced padding */
+      text-align: center;
+    }
+  
+    .hero h1 {
+      font-size: 1.8rem; /* Smaller font size for mobile screens */
+    }
+  
+    .hero h2 {
+      font-size: 1.4rem; /* Reduced font size for secondary heading */
+    }
+  
+    .subtitle {
+      font-size: 1rem; /* Smaller font for subtitle */
+      margin-bottom: 1rem; /* Tighter spacing */
+    }
+  
+    /* Center countdown container */
+    .countdown {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
       gap: 1rem;
-  }
-
-  /* Launch time items stay in a single line */
-.launch-time div {
+      padding: 15px;
+      text-align: center;
+    }
+  
+    /* Launch time items stay in a single line */
+    .launch-time div {
       padding: 8px 10px; /* Adjust padding */
-  }
-
-  /* Adjust font sizes for smaller screens */
-.launch-time p:first-child {
+    }
+  
+    /* Adjust font sizes for smaller screens */
+    .launch-time p:first-child {
       font-size: 1.5rem;
-  }
-
-.launch-time p:last-child {
+    }
+  
+    .launch-time p:last-child {
       font-size: 0.75rem;
-  }
-
-.countdown {
-      padding: 15px;
-  }
-.format-title {
-      font-size: 2em;
     }
   
-.timeline-content {
-      padding: 15px;
-    }
-  
-.format-card {
-      width: 260px;
-      height: 180px;
-    }
-    /*Event Cards*/
-.event-1 {
+    /* Center event section */
+    .event-1 {
       flex: 1 1 100%; /* Full width for mobile phones */
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
     }
   
-.card-content {
-      max-width: 200px; /* Adjust width for small mobile screens */
+    .card-content {
+      max-width: 250px; /* Adjust width for small mobile screens */
       max-height: 150px;
     }
   
-.event-title {
+    .event-title {
       font-size: 1.2rem; /* Smaller title font size */
     }
   
-.card-title {
+    .card-title {
       font-size: 14px; /* Smaller card title font size */
+    }
+  
+    /* Format Cards */
+    .format-title {
+      font-size: 2em;
+      text-align: center;
+    }
+  
+    .timeline-content {
+      padding: 15px;
+      text-align: center;
+    }
+  
+    .format-card {
+      width: 260px;
+      height: 180px;
+      margin: 0 auto; /* Center the card */
+    }
+
+    .footer {
+      width: 100vw; /* Ensure it covers the full viewport width */
+      max-width: 100%;
+      background-color: #222; /* Adjust background color if needed */
+      color: white;
+      text-align: center;
+      padding: 20px;
+      box-sizing: border-box; /* Prevent extra spacing issues */
+    }
+  
+    /* Center content properly */
+    .footer-content {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      max-width: 100%;
+      margin: 0 auto;
+    }
+  
+    /* Footer links centered */
+    .footer-links {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      width: 100%;
+    }
+  
+    /* Fix potential spacing issues */
+    .footer p {
+      margin: 5px 0;
+      padding: 5px;
+      font-size: 14px;
+    }
+  }
+  
+  @media (max-width: 320px) {
+    /* Center align everything */
+    body {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 0;
+      margin: 0;
+      width: 100%;
+    }
+  
+    /* Navigation Bar */
+    .nav-links {
+      display: none; /* Hide desktop links on mobile */
+    }
+  
+    .mobile-menu-btn {
+      display: block; /* Show hamburger menu button on mobile */
+    }
+  
+    .mobile-menu {
+      display: block; /* Enable mobile menu */
+    }
+  
+    /* Header */
+    .hero {
+      margin-top: 40px;
+      padding: 0.8rem; /* Further reduced padding */
+      text-align: center;
+    }
+  
+    .hero h1 {
+      font-size: 1.5rem; /* Smaller font size */
+    }
+  
+    .hero h2 {
+      font-size: 1.2rem; /* Reduced font size */
+    }
+  
+    .subtitle {
+      font-size: 0.9rem; /* Smaller font */
+      margin-bottom: 0.8rem;
+    }
+  
+    /* Center countdown container */
+    .countdown {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 0.8rem;
+      padding: 10px;
+      text-align: center;
+    }
+  
+    /* Launch time items */
+    .launch-time div {
+      padding: 6px 8px;
+    }
+  
+    /* Adjust font sizes */
+    .launch-time p:first-child {
+      font-size: 1.3rem;
+    }
+  
+    .launch-time p:last-child {
+      font-size: 0.7rem;
+    }
+  
+    /* Center event section */
+    .event-1 {
+      flex: 1 1 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+  
+    .card-content {
+      max-width: 200px;
+      max-height: 140px;
+    }
+  
+    .event-title {
+      font-size: 1rem;
+    }
+  
+    .card-title {
+      font-size: 12px;
+    }
+  
+    /* Format Cards */
+    .format-title {
+      font-size: 1.8em;
+    }
+  
+    .timeline-content {
+      padding: 10px;
+    }
+  
+    .format-card {
+      width: 240px;
+      height: 160px;
+      margin: 0 auto;
+    }
+  
+    /* Footer */
+    .footer {
+      width: 100%;
+      max-width: 100%;
+      text-align: center;
+      padding: 15px;
+      background-color: #222;
+      color: white;
+      box-sizing: border-box;
+    }
+  
+    .footer-content {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      margin: 0 auto;
+    }
+  
+    .footer-links {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      width: 100%;
+    }
+  
+    .footer p {
+      margin: 0;
+      padding: 5px;
+      font-size: 12px;
     }
   }
   

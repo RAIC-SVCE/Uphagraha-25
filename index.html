@@ -4,16 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>upagraha-25</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="newstyles.css">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 <body>
     <!-- Navigation -->
     <nav id="navbar" class="navbar" >
         <div class="nav-content">
-            <div class="nav-logo">
-                <!--<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="calendar-icon"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>
-                <span>TechSymposium 2024</span>-->       
+            <div class="nav-logo">       
                 <img src="main-logo2.png" id="iete_logo"  width="120" height="50" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="calendar-icon"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10">
                 </div>
             <button class="mobile-menu-btn" onclick="toggleMenu()">
@@ -22,10 +20,11 @@
                 <span></span>
             </button>
             <div class="nav-links">
-                <a href="../index.html" class="nav-link">Home</a>
+                <a href="#home" class="nav-link" >Home</a>
                 <a href="#about" class="nav-link">About</a>
-                <a href="#rules" class="nav-link">Rules</a>
-                <a href="#venue" class="nav-link">Venue</a>
+                <a href="#Timeline" class="nav-link">Timeline</a>
+                <a href="#Schedule" class="nav-link">Schedule</a>
+                <a href="#Events" class="nav-link">Events</a>
                 <a href="#contact" class="nav-link">Contact</a>
             </div>
         </div>
@@ -33,10 +32,11 @@
 
     <!-- Mobile Menu -->
     <div class="mobile-menu">
-        <a href="../index.html" class="mobile-link" onclick="toggleMenu()">Home</a>
+        <a href="#home" class="mobile-link " onclick="toggleMenu()">Home</a>
         <a href="#about" class="mobile-link" onclick="toggleMenu()">About</a>
-        <a href="#rules" class="mobile-link" onclick="toggleMenu()">Rules</a>
-        <a href="#venue" class="mobile-link" onclick="toggleMenu()">Venue</a>
+        <a href="#Timeline" class="mobile-link" onclick="toggleMenu()">Timeline</a>
+        <a href="#Schedule" class="mobile-link" onclick="toggleMenu()">Schedule</a>
+        <a href="#Events" class="mobile-link" onclick="toggleMenu()">Events</a>
         <a href="#contact" class="mobile-link" onclick="toggleMenu()">Contact</a>
     </div>
 
@@ -44,271 +44,313 @@
     <div class="video-background">
         <div class="overlay"></div>
         <video autoplay loop muted playsinline poster="https://images.unsplash.com/photo-1540575467063-178a50c2df87?auto=format&fit=crop&q=80">
-            <source src="6.mp4" type="video/mp4">
+            <source src="videoplayback.webm" type="video/webm">
         </video>
     </div>
 
     <!-- Main Content -->
     <main>
         <!-- Hero Section -->
-        <section id="home" class="hero" data-aos="fade-up">
-            <h1>Blind Chase</h1>
-            <p class="subtitle">(General Event)</p>
+        <section class="hero" data-aos="fade-up">
+            <h1>Sri Venkateswara College of Engineering</h1>
+            <h2>Department of Electronics and Communication Engineering</h2>
+            <p class="subtitle">Proudly Presents</p>
+            <div class="main-logo"><img src="main-logo2.png" ></div>
+            <br>
+            <br>
+            <br>
+            <div class="logos-container"> 
+                   <img id="main-img" src="svce-removebg-preview.png">
+                   <img id="main-img" src="ECEA logo.png">
+                   <img id="main-img" src="IETE-HOD-ECE-removebg-preview.png">
+                   <img id="main-img" src="raic logo.png">                
+            </div>
+            <br>
+            <h5 id="countdown-header"> Upagragha'25 Starts in </h5>
+             <br>
             <div class="countdown">
-                <div class="countdown-item">
-                    <span id="days">00</span>
-                    <span>Days</span>
-                </div>
-                <div class="countdown-item">
-                    <span id="hours">00</span>
-                    <span>Hours</span>
-                </div>
-                <div class="countdown-item">
-                    <span id="minutes">00</span>
-                    <span>Minutes</span>
-                </div>
-                <div class="countdown-item">
-                    <span id="seconds">00</span>
-                    <span>Seconds</span>
-                </div>
+                <div class="launch-time">
+                    <div>
+                      <p id="days">00</p>
+                      <p>Days</p>
+                    </div>
+                    <div>
+                      <p id="hours">00</p>
+                      <p>Hours </p>
+                    </div>
+                    <div>
+                      <p id="minutes">00</p>
+                      <p>Minutes</p>
+                    </div>
+                    <div>
+                      <p id="seconds">00</p>
+                      <p>Seconds</p>
+                    </div>
+                  </div>
             </div>
         </section>
-
+        <div class="container" id="reg-container">
+            <p class="text-center" id="text_reg">Register here for Upagraha'25</p>
+            <button class="button-57" role="button">
+              <span class="text">
+                <a href="https://forms.gle/GMy4Q9tRiMKis85s7" style="text-decoration: none; color:black;">
+                  Upagraha'25
+                </a>
+              </span>
+              <span>
+                <a href="https://forms.gle/GMy4Q9tRiMKis85s7" style="text-decoration: none; color:white;">
+                  Register
+                </a>
+              </span>
+            </button>
+        </div>
         <!-- About Section -->
         <section id="about" class="section" data-aos="fade-up">
-            <h2>About the Event</h2>
+            <h2 class="about-title">Upagraha'25</h2>
             <div class="content-card">
-                <p>Dive into the exciting world of electronics with 
-                    "Blind Chase", a two-round competition that tests
-                     your strategy, teamwork, and technical skills.
-                      From quick thinking in the cup-stacking challenge
-                       to precise communication in the blindfolded circuit
-                        assembly, this event is your chance to showcase
-                         creativity, coordination, and expertise in a thrilling format. 
-
-                    <br>Join us at Upagraha'25 and take on the challenge 
-                    where communication, coordination, and technical prowess
-                     define the road to victory. Compete with the best and 
-                     claim the title of Blind Chase champions!
-                    </p>
-            </div>   
-
-            <br>
-            <h2>Round 1: CUP BUILD AND HIT</h2>         
-            <div class="content-card">
-                <p> Each team is equipped with paper cups and balls,
-                     with all participants competing using a shared
-                      buzzer system. When a question is posed, the
-                       first team to hit the buzzer earns the opportunity 
-                       to make a strategic decision: either build their cup 
-                       stack to secure points or use the balls to disrupt
-                        another team’s progress by knocking down their
-                         stack. By the end of the round, only the teams
-                          with the most successfully built cups will move
-                           forward to the round 2.</p>
-
-                                <!-- Rules Section -->
-               <!-- <section id="rules" class="section" data-aos="fade-up">
-                    <h2>Round 1 Rules</h2>
-                    <div class="content-card">
-                        <h2>Pen and Paper Round</h2>
-                        <div class="rules-list">
-                            <div class="rule">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
-                                <span>Internet usage is strictly not allowed.</span>
-                            </div>
-                            <h4>Question Format:</h4>
-                            <div class="rule">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
-                                <span>20 questions, each carrying 1 mark.</span>
-                            </div>
-                            <div class="rule">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
-                                <span>5 additional hard questions, each carrying 3 marks.</span>
-                            </div>
-                            <h4>Time Limit:</h4>
-                            <div class="rule">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
-                                <span>Total duration: 30 minutes.</span>
-                            </div>
-            
-                        </div>
-                    </div>
-                </section>-->
-                
-            </div>
-            <br>
-            <h2>Round 2: PUZZLE ASSEMBLY WITH BLINDFOLD</h2>         
-            <div class="content-card">
-                <p>Each team is assigned a circuit name and must assemble it
-                     using a puzzle. However, there’s a twist, one teammate
-                      will be blindfolded and must rely entirely on verbal
-                       instructions from their partner to complete the task.
-                        Success in this round depends on effective communication,
-                         a solid understanding of circuit components, and the
-                          ability to stay focused under pressure.</p>
-                    <!-- Rules Section -->
-       <!-- <section id="rules" class="section" data-aos="fade-up">
-            <h2>Round 2 Rules</h2>
-            <div class="content-card">
-                <h2>Auction and Project Development</h2>
-                <div class="rules-list">
-                    <div class="rule">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
-                        <span>Each team is allotted a budget (purse value) of ₹25,000.</span>
-                    </div>
-                    <div class="rule">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
-                        <span>The list of auction items will be revealed just a few minutes before the auction begins.</span>
-                    </div>
-                    <div class="rule">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
-                        <span>The top 2 teams from Round 1 will receive 2 power cards each, which can provide strategic advantages during the auction.</span>
-                    </div>
-                    <h4>Project Creation:</h4>
-                    <div class="rule">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
-                        <span>Teams must use the components purchased during the auction to develop a project.</span>
-                    </div>
-                    <h4>Presentation:</h4>
-                    <div class="rule">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
-                        <span>Teams will prepare a PowerPoint presentation (PPT) to explain their project.</span>
-                    </div>
-                    <div class="rule">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
-                        <span>Each team will pitch their project to a panel of judges.</span>
-                    </div>
-    
-                </div>
-            </div>
-        </section>-->
-            </div>
-
-        </section>
-
-                            <!-- Rules Section -->
-                            <section id="rules" class="section" data-aos="fade-up">
-                                <h2>Rules</h2>
-                                <div class="content-card">
-                                    
-                                    <h2>Event</h2>
-                                    <div class="rules-list">
-                                        <div class="rule">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
-                                            <span>Team Size: exactly 2 members max.</span>
-                                        </div>
-                                        <div class="rule">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
-                                            <span>Participants must present a valid college identification at the time of the event.</span>
-                                        </div>
-                                        <div class="rule">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
-                                            <span>All participants are required to register in advance through the official event registration portal. On-spot registration will not be allowed.</span>
-                                        </div>
-                                        <div class="rule">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
-                                            <span>Participants are expected to maintain a respectful and professional attitude towards fellow participants, organizers, and event staff. Any form of harassment or disruptive behavior will not be tolerated.</span>
-                                        </div>
-                                        <div class="rule">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
-                                            <span>The decision of the judges is final and binding. Any violation of the rules may lead to immediate disqualification.</span>
-                                        </div>
-                                        <h2>General</h2>
-                                        <div class="rule">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
-                                            <span>All participants must register before the event deadline</span>
-                                        </div>
-                                        <div class="rule">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
-                                            <span>Participants should arrive 30 minutes before their scheduled session</span>
-                                        </div>
-                                        <div class="rule">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
-                                            <span>Professional conduct is expected throughout the event</span>
-                                        </div>
-                                        <div class="rule">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
-                                            <span>Recording of sessions is prohibited without prior permission</span>
-                                        </div>
-                                    </div>
-                                </div>
-
-
-
-
-        <!-- Event Details Grid -->
-        <div class="grid-section">
-            <!-- Timing & Venue -->
-            <section id="venue" class="section" data-aos="fade-right">
-                <h2>Event Details</h2>
-                <div class="content-card">
-                    <div class="details">
-                        <div class="detail-item">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
-                            <div>
-                                <h3>Date & Time</h3>
-                                <p>February 22, 2025 | 9:00 AM - 3:00 PM</p>
-                            </div>
-                        </div>
-                        <br>
-                        <div class="detail-item">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
-                            <div>
-                                <p>Class No: 532</p>
-                                <p>3rd Floor,Block-5,</p>
-                                <p>ECE - Department opposite, SVCE.</p>
-                            </div>
-                        </div>
-                        <br>
-                        <div class="detail-item">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
-                            <div>
-                                <h3>Timings:</h3>
-                                <p><b>Round 1:</b> 90 mins</p>
-                                    <br>
-                                <p><b>Round 2:</b> 60 mins</p>
-                                <p>Capacity:</p>
-                                <p>Limited to 30 teams</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <!-- Event Coordinator -->
-            <section id="contact" class="section" data-aos="fade-left">
-                <h2>Organizers</h2>
-                <div class="content-card coordinator">
-                    <img src="crew pic/5.png" alt="Event Coordinator" class="coordinator-img">
-                    <div class="coordinator-info">
-                        <h3>SRIMATHI R</h3>
-                        <p class="coordinator-title">Event Coordinator</p>
-                        <!--<div class="contact-info">
-                            <a href="mailto:sarah@techsymposium.com" class="contact-link">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
-                                srimathe@svce.ac.in
+                <p>The department of ECE of Sri Venkateswara College of Engineering is proud to launch Its National level Technical Symposium, with the prime focus of encouraging young tech enthusiasts to engage in vigorous research and promote engineering to a whole new level. Upagraha'23 will act as a platform to exchange ideas and scientific knowledge through intense professional interaction. We believe this will lead to an inoculum of utilitarian ideas in various fields, not restricted to electronics!</p>
+                <p> We welcome you to participate and highlight your talent in front of eminent professors, industrial professionals, and talented students in a formal environment.                
+                    <div class="container" id="reg-container">
+                        <button class="button-57" role="button">
+                          <span class="text">
+                            <a href="https://forms.gle/GMy4Q9tRiMKis85s7" style="text-decoration: none; color:black;">
+                              Upagraha'25
                             </a>
-                            <a href="tel:+1234567890" class="contact-link">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
-                                1234567890
+                          </span>
+                          <span>
+                            <a href="https://forms.gle/GMy4Q9tRiMKis85s7" style="text-decoration: none; color:white;">
+                              Register
                             </a>
-                        </div>-->
-                    </div>
-                </div>
+                          </span>
+                        </button>
+                  </div>
+                </div>   
+            <br>
+            <br>
+            <br>
+
+            <div class="sponsor-container">
+                <h1>SPONSORS</h1>
                 <br>
-                <div class="content-card coordinator">
-                    <img src="crew pic/6.png" alt="Event Coordinator" class="coordinator-img">
-                    <div class="coordinator-info">
-                        <h3>SRIMATHI R</h3>
-                        <p class="coordinator-title">Event Coordinator</p>
-                    
-                    </div>
-                </div>
-            </section>
-        </div>
+                <h2>Coming Soon...</h2>
+            </div>
 
-        <!-- Registration Section -->
+            <!-- event format section -->
+<section id="Timeline" class="event-format">
+    <div class="format-container">
+        <h2 class="format-title">Timeline</h2>
+        <div class="format-timeline">
+            <div class="timeline-item" data-aos="fade-right">
+                <div class="timeline-icon">
+                    <i class="fas fa-tools"></i>
+                </div>
+                <div class="timeline-content">
+                    <h3>1st February 2025</h3>
+                    <p>Date reveal for Upagraha'25</p>
+                </div>
+            </div>
+            
+            <div class="timeline-item" data-aos="fade-left">
+                <div class="timeline-icon">
+                    <i class="fas fa-box"></i>
+                </div>
+                <div class="timeline-content">
+                    <h3>2nd February 2025</h3>
+                    <p>Registration starts for Upagraha'25</p>
+                </div>
+            </div>
+            
+            <div class="timeline-item" data-aos="fade-right">
+                <div class="timeline-icon">
+                    <i class="fas fa-laptop-code"></i>
+                </div>
+                <div class="timeline-content">
+                    <h3>21st February 2025</h3>
+                    <p>Last date for Registration</p>
+                </div>
+            </div>
+            
+            <div class="timeline-item" data-aos="fade-left">
+                <div class="timeline-icon">
+                    <i class="fas fa-chalkboard-teacher"></i>
+                </div>
+                <div class="timeline-content">
+                    <h3>22nd February 2025</h3>
+                    <p>Upagraha'25</p>
+                </div>
+            </div>
+      
+</section>
+</section>
+
+
+                            <div id="Schedule" class="schedule-container" id="schedule-container">
+                                <h1>SCHEDULE</h1>
+                                <h2>Mark your Calendars!</h2>
+                                <div class="table-body">
+                                  <table>
+                                    <tbody>
+                                      <tr>
+                                        <td>S.NO</td>
+                                        <td>
+                                          <a>EVENT NAME</a
+                                          >
+                                        </td>
+                                        <td id="tabled">VENUE</td>
+                                        <td>TIMING</td> 
+                                      </tr>
+                                      <tr>
+                                        <td>1</td>
+                                        <td>
+                                          <a href="Peek-A-Project - Copy (2)/index.html"
+                                            ><img src="./Images/arduino.jpg" alt="" />Peek a Project</a
+                                          >
+                                        </td>
+                                        <td id="tabled">EMBEDDED LAB</td>
+                                        <td>Full Day</td>
+                                      </tr>
+                                      <tr>
+                                        <td>2</td>
+                                        <td>
+                                          <a href="Paper Presentation/index.html"
+                                            ><img
+                                              src="./Images/connectiverse.jpg"
+                                              alt=""
+                                            />Tech Thesis</a
+                                          >
+                                        </td>
+                                        <td id="tabled">MPMC, DSP,
+                                          Communication LAB</td>
+                                        <td>TIMING</td>
+                                      </tr>
+                                      <tr>
+                                        <td>3</td>
+                                        <td>
+                                          <a href="Pich It Sell It/index.html"
+                                            ><img src="./Images/promptify.jpg" alt="" />Pich IT Sell-IT</a
+                                          >
+                                        </td>
+                                        <td id="tabled">V BLOCK GROUND FLOOR</td>
+                                        <td>TIMING</td>
+                                      </tr>
+                                      <tr>
+                                        <td>4</td>
+                                        <td>
+                                          <a href="Blind Chase/index.html"
+                                            ><img src="./Images/project.jpg" alt="" />Blind Chase</a
+                                          >
+                                        </td>
+                                        <td id="tabled">V BLOCK THIRD FLOOR</td>
+                                        <td>TIMING</td>
+                                      </tr>
+                                      <tr>
+                                        <td>5</td>
+                                        <td>
+                                          <a href="Watt A Hunt/index.html"
+                                            ><img src="./Images/venture.jpg" alt="" />Watt a Hunt</a
+                                          >
+                                        </td>
+                                        <td id="tabled">V BLOCK GROUND & THIRD FLOOR</td>
+                                        <td>12:30-3PM</td>
+                                      </tr>
+                                      <tr>
+                                        <td>6</td>
+                                        <td>
+                                          <a href="simul-infinity/index.html"
+                                            ><img src="./Images/paper.jpg" alt="" />Simul-infinity</a
+                                          >
+                                        </td>
+                                        <td id="tabled">V BLOCK , DSP LAB</td>
+                                        <td>TIMING</td>
+                                      </tr>
+                                    </tbody>
+                                  </table>
+                                </div>
+                            </div> 
+
+
+        <h1 id="Events" class="event-title">EVENTS</h1> 
+       
+        <div class="event-container">
+                <div class="event-1">
+                        <div class="card-content">
+                        <a href="Peek-A-Project - Copy (2)/index.html">
+                        <img id="card-img" src="promptify.jpg" class="image-top"/>
+                        <img src="project.jpg" alt="Image 2" class="image-bottom" />
+                        </a>
+                     </div>
+                     <h5 class="card-title">PEEK A PROJECT</h5>
+                </div>
+                <div class="event-1">
+                      <div class="card-content">
+                        <a href="Paper Presentation/index.html">
+                        <img id="card-img" src="promptify.jpg" class="image-top"/>
+                        <img src="project.jpg" alt="Image 2" class="image-bottom"/>
+                        </a>
+                      </div>
+                      <h5 class="card-title">TECH THESIS</h5>
+                </div>
+                <div class="event-1">
+                      <div class="card-content">
+                        <a href="Pich It Sell It/index.html">
+                            <img id="card-img" src="promptify.jpg"class="image-top"/>
+                            <img src="project.jpg" alt="Image 2" class="image-bottom"/>
+                        </a>
+                      </div>
+                      <h5 class="card-title">PICK IT SELL IT</h5>
+                </div> 
+                <div class="event-1">
+                      <div class="card-content">
+                        <a href="Blind Chase/index.html">
+                            <img id="card-img" src="promptify.jpg"class="image-top"/>
+                            <img src="project.jpg" alt="Image 2" class="image-bottom"/>
+                        </a>
+                      </div>
+                      <h5 class="card-title">BLIND CHASE</h5>
+                </div>
+                <div class="event-1">
+                      <div class="card-content">
+                        <a href="Watt A Hunt/index.html"> 
+                            <img id="card-img" src="promptify.jpg"class="image-top"/>
+                            <img src="project.jpg" alt="Image 2" class="image-bottom"/>
+                        </a>
+                      </div>
+                      <h5 class="card-title">WATT A HUNT</h5>
+                </div>
+                <div class="event-1">
+                      <div class="card-content"> 
+                        <a href="simul-infinity/index.html">
+                            <img id="card-img" src="promptify.jpg"class="image-top"/>
+                            <img src="project.jpg" alt="Image 2" class="image-bottom"/>
+                        </a>
+                      </div>
+                      <h5 class="card-title">SIMUL-INFINITY</h5>
+                </div>
+                </div>
+      
+
+ 
+                <div class="container" id="reg-container">
+                  <p class="text-center" id="text_reg">Register here for Upagraha'25</p>
+                  <button class="button-57" role="button">
+                    <span class="text">
+                      <a href="https://forms.gle/GMy4Q9tRiMKis85s7" style="text-decoration: none; color:black;">
+                        Upagraha'25
+                      </a>
+                    </span>
+                    <span>
+                      <a href="https://forms.gle/GMy4Q9tRiMKis85s7" style="text-decoration: none; color:white;">
+                        Register
+                      </a>
+                    </span>
+                  </button>
+              </div>
+
+         <br>
+         <br>
+         <br>
+
+        <!-- Registration Section 
         <section class="registration-section" data-aos="fade-up">
             <div class="content-card">
                 <h2>Join Us at upagraha-25</h2>
@@ -319,138 +361,111 @@
                 </button>
             </div>
         </section>
-    </main>
+    </main> -->
 
-    <!-- Registration Modal 
-    <div id="registrationModal" class="modal">
-        <div class="modal-content">
-            <span class="close-btn" onclick="closeModal()">&times;</span>
-            <h2>Register for TechSymposium 2024</h2>
-            <form id="registrationForm" onsubmit="handleRegistration(event)">
-                <div class="form-group">
-                    <label for="name">Full Name</label>
-                    <input type="text" id="name" required>
-                </div>
-                <div class="form-group">
-                    <label for="email">Email</label>
-                    <input type="email" id="email" required>
-                </div>
-                <div class="form-group">
-                    <label for="phone">Phone Number</label>
-                    <input type="tel" id="phone" required>
-                </div>
-                <div class="form-group">
-                    <label for="organization">Organization</label>
-                    <input type="text" id="organization" required>
-                </div>
-                <button type="submit" class="register-btn">Submit Registration</button>
-            </form>
+    <footer id="contact">
+        <div class="container text-center text-md-left">
+          <div class="row text-center text-md-left">
+            <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3" id="footed">
+              <h5
+                class="text-uppercase mb-4 font-weight-bold"
+                style="color:whitesmoke"
+                id="contacted">
+                Upagraha'25
+              </h5>
+              <p id="foot-content">
+                <span>Sri Venkateswara College of Engineering</span><br />
+                Post Bag No.1,Pennalur Village <br />Chennai - Bengaluru High Road
+                <br />Sriperumbudur Tk, Tamil Nadu 602117<br /><br />
+                <span
+                  >Phone:<a href="tel:63809 89594">63809 89594</a><br />Yaaminy
+                  (Secretary)</span>
+                <br />
+                <span>Email:
+                  <a href="mailto:ecea@svce.ac.in">ecea@svce.ac.in</a></span
+                >
+              </p>
+            </div>
+            <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+              <h5
+                class="text-uppercase mb-4 font-weight-bold"
+                style="color:whitesmoke"
+              >
+                LINKS
+              </h5>
+              <p>
+                <a href="#" class="text-white" style="text-decoration: none"
+                  >Home</a
+                >
+              </p>
+              <p>
+                <a
+                  href="#about"
+                  class="text-white"
+                  style="text-decoration: none"
+                  >About</a
+                >
+              </p>
+              <p>
+                <a href="#Timeline" class="text-white" style="text-decoration: none"
+                  >Timeline</a
+                >
+              </p>
+              <p>
+                <a
+                  href="#Schedule"
+                  class="text-white"
+                  style="text-decoration: none"
+                  >Schedule</a
+                >
+              </p>
+              <p>
+                <a
+                  href="#Events"
+                  class="text-white"
+                  style="text-decoration: none"
+                  >Our Events</a
+                >
+              </p>
+              <p>
+                <a
+                  href="#contact"
+                  class="text-white"
+                  style="text-decoration: none"
+                  >Contact</a
+                >
+              </p>
+            </div>
+            <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3" id="fet">
+              <h5
+                class="text-uppercase mb-4 font-weight-bold"
+                style="color:whitesmoke"
+              >
+                CONNECT WITH US
+              </h5>
+              <div id="svg-icon">
+              <a href="https://www.instagram.com/eceasvce/?igshid=YmMyMTA2M2Y%3D"
+                > <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+             </a>
+              <a href="https://in.linkedin.com/company/ecea-svce"
+                ><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+            </a>
         </div>
-    </div>-->
-
-    <!-- Footer -->
-<footer class="bg-dark text-white pt-5 pb-4" id="contact">
-    <div class="container text-center text-md-left">
-      <div class="row text-center text-md-left">
-        <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3" id="footed">
-          <h5
-            class="text-uppercase mb-4 font-weight-bold"
-            style="color:whitesmoke"
-            id="contacted">
-            Upagraha'25
-          </h5>
-          <p id="foot-content">
-            <span>Sri Venkateswara College of Engineering</span><br />
-            Post Bag No.1,Pennalur Village <br />Chennai - Bengaluru High Road
-            <br />Sriperumbudur Tk, Tamil Nadu 602117<br /><br />
-            <span
-              >Phone:<a href="tel:63809 89594">63809 89594</a><br />Yaaminy
-              (Secretary)</span>
-            <br />
-            <span>Email:
-              <a href="mailto:ecea@svce.ac.in">ecea@svce.ac.in</a></span
-            >
-          </p>
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3887.732642346902!2d79.96767497580335!3d12.988944514496236!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a528cd0cfb6e7ab%3A0x3294da3faad96a9!2sSri%20Venkateswara%20College%20of%20Engineering%20(SVCE)!5e0!3m2!1sen!2sin!4v1694347794223!5m2!1sen!2sin"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              ></iframe>
+            </div id="copyright">
+            <p class="copyright">Upagraha'25 @ All Rights Reserved</p>
+            <p class="copyright">&lt;/&gt; With ❤️ by ECE Web Team</p>
+          </div>
         </div>
-        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
-          <h5
-            class="text-uppercase mb-4 font-weight-bold"
-            style="color:whitesmoke"
-          >
-            LINKS
-          </h5>
-          <p>
-            <a href="#" class="text-white" style="text-decoration: none"
-              >Home</a
-            >
-          </p>
-          <p>
-            <a
-              href="#about"
-              class="text-white"
-              style="text-decoration: none"
-              >About</a
-            >
-          </p>
-          <p>
-            <a href="#Timeline" class="text-white" style="text-decoration: none"
-              >Timeline</a
-            >
-          </p>
-          <p>
-            <a
-              href="#Schedule"
-              class="text-white"
-              style="text-decoration: none"
-              >Schedule</a
-            >
-          </p>
-          <p>
-            <a
-              href="#Events"
-              class="text-white"
-              style="text-decoration: none"
-              >Our Events</a
-            >
-          </p>
-          <p>
-            <a
-              href="#contact"
-              class="text-white"
-              style="text-decoration: none"
-              >Contact</a
-            >
-          </p>
-        </div>
-        <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3" id="fet">
-          <h5
-            class="text-uppercase mb-4 font-weight-bold"
-            style="color:whitesmoke"
-          >
-            CONNECT WITH US
-          </h5>
-          <div id="svg-icon">
-          <a href="https://www.instagram.com/eceasvce/?igshid=YmMyMTA2M2Y%3D"
-            > <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
-         </a>
-          <a href="https://in.linkedin.com/company/ecea-svce"
-            ><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
-        </a>
-    </div>
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3887.732642346902!2d79.96767497580335!3d12.988944514496236!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a528cd0cfb6e7ab%3A0x3294da3faad96a9!2sSri%20Venkateswara%20College%20of%20Engineering%20(SVCE)!5e0!3m2!1sen!2sin!4v1694347794223!5m2!1sen!2sin"
-            allowfullscreen=""
-            loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"
-          ></iframe>
-        </div id="copyright">
-        <p class="copyright">Upagraha'25 @ All Rights Reserved</p>
-        <p class="copyright">&lt;/&gt; With ❤️ by ECE Web Team</p>
-      </div>
-    </div>
-  </footer>
+      </footer>
+  
 
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script src="script.js"></script>
+    <script src="newscript.js"></script>
 </body>
 </html>

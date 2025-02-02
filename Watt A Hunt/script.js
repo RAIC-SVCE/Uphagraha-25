@@ -45,7 +45,7 @@ function toggleMenu() {
 
 // Countdown Timer
 function updateCountdown() {
-    const eventDate = new Date('March 15, 2024 09:00:00').getTime();
+    const eventDate = new Date('February 21, 2025 00:00:00:00').getTime();
     const now = new Date().getTime();
     const distance = eventDate - now;
 

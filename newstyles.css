@@ -3,7 +3,7 @@
     --primary-color: #8a8282;
     --primary-dark: #1b1b1b;
     --text-light: #ccbebe;
-    --text-dark: #1f2937;
+    --text-dark: #000000;
     --bg-transparent: rgba(255, 255, 255, 0.6);
     --transition: all 0.3s ease;
 }
@@ -25,6 +25,7 @@ body {
     color: var(--text-light);
     overflow-x: hidden;
     user-select: none;
+    width: 100%;
 }
 
 /* Navigation */
@@ -45,6 +46,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    
 }
 
 .nav-logo {

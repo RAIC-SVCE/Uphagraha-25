@@ -26,6 +26,8 @@ body {
     overflow-x: hidden;
     user-select: none;
     width: 100%;
+    right: 0;
+    left: 0;
 }
 
 /* Navigation */

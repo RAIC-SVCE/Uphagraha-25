@@ -1,7 +1,7 @@
 /* Base Styles */
 :root {
-    --primary-color: #8a8282;
-    --primary-dark: #404540;
+    --primary-color: #aea5a5;
+    --primary-dark: #bebbbb;
     --text-light: #ccbebe;
     --text-dark: #1f2937;
     --bg-transparent: rgba(255, 255, 255, 0.1);
@@ -237,7 +237,7 @@ main {
 
 .content-card {
     background: rgba(255, 255, 255, 0.1);
-    backdrop-filter: blur(10px);
+    /*backdrop-filter: blur(10px);*/
     border-radius: 1rem;
     padding: 2rem;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);

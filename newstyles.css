@@ -915,7 +915,7 @@ footer .copyright:first-of-type {
   .format-title {
     text-align: center;
     font-size: 2.5em;
-    color: #ccbebe;
+    color: #ffffff;
     margin-bottom: 60px;
     text-transform: uppercase;
     letter-spacing: 2px;
@@ -930,7 +930,7 @@ footer .copyright:first-of-type {
     transform: translateX(-50%);
     width: 60px;
     height: 3px;
-    background: linear-gradient(90deg, #00ff88, #00a1ff);
+    background: linear-gradient(90deg,gold,goldenrod);
   }
   
   .format-timeline {

@@ -2,9 +2,9 @@
 :root {
     --primary-color: #8a8282;
     --primary-dark: #1b1b1b;
-    --text-light: #ccbebe;
+    --text-light: #ffffff;
     --text-dark: #000000;
-    --bg-transparent: rgba(255, 255, 255, 0.6);
+    --bg-transparent: rgba(255, 255, 255, 0.859);
     --transition: all 0.3s ease;
 }
 
@@ -382,7 +382,7 @@ main {
 /*Upagraha content*/ 
 
 .about-title{
-  color: white;
+  color: rgb(255, 255, 255);
 }
 
 .content-card {

@@ -2,7 +2,7 @@
 :root {
     --primary-color: #907c19;
     --primary-dark: #14150b;
-    --text-light: #ece5d7;
+    --text-light: #ffffff;
     --text-dark: #1f2937;
     --bg-transparent: rgba(255, 255, 255, 0.1);
     --transition: all 0.3s ease;

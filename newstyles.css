@@ -1,7 +1,7 @@
 /* Base Styles */
 :root {
     --primary-color: #8a8282;
-    --primary-dark: #404540;
+    --primary-dark: #1b1b1b;
     --text-light: #ccbebe;
     --text-dark: #1f2937;
     --bg-transparent: rgba(255, 255, 255, 0.6);
@@ -34,7 +34,7 @@ body {
     left: 0;
     right: 0;
     z-index: 1000;
-    background: rgb(0, 0, 0);
+    background: rgba(0, 0, 0, 0.8);
     transition: var(--transition);
 }
 

@@ -4,7 +4,7 @@
     --primary-dark: #14150b;
     --text-light: #ffffff;
     --text-dark: #1f2937;
-    --bg-transparent: rgba(255, 255, 255, 0.1);
+    --bg-transparent: rgb(255, 255, 255);
     --transition: all 0.3s ease;
 }
 

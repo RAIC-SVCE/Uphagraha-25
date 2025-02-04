@@ -1080,6 +1080,10 @@ footer .copyright:first-of-type {
   .card-back p {
     color: #fff;
   }
+
+  .contact-info{
+    text-align: left; 
+  }
   
   /* Responsive Design */
   @media (max-width: 768px) {

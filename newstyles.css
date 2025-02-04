@@ -1082,8 +1082,17 @@ footer .copyright:first-of-type {
   }
 
   .contact-info{
-    align-items: left;
+    text-align: left;
   }
+  .contact-info span {
+    display: block; /* Ensures each contact appears in a new line */
+    margin-bottom: 10px; /* Adds spacing between contacts */
+}
+
+.contact-info a {
+    text-decoration: none;
+    color: blue; /* Adjust link color as needed */
+}
   
   /* Responsive Design */
   @media (max-width: 768px) {

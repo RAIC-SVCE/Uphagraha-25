@@ -26,9 +26,7 @@ body {
     overflow-x: hidden;
     user-select: none;
     width: 100%;
-    right: 0;
-    left: 0;
-}
+    
 
 /* Navigation */
 .navbar {
@@ -1081,7 +1079,7 @@ footer .copyright:first-of-type {
     color: #fff;
   }
 
-  .contact-info{
+  .contact-cell{
     text-align: left; 
   }
   
@@ -1131,6 +1129,8 @@ footer .copyright:first-of-type {
       text-align: center;
       padding: 0;
       margin: 0;
+      width: 100%;
+    overflow-x: hidden;
     }
   
     /* Navigation Bar */
@@ -1278,6 +1278,7 @@ footer .copyright:first-of-type {
       padding: 0;
       margin: 0;
       width: 100%;
+      overflow-x: hidden;
     }
   
     /* Navigation Bar */

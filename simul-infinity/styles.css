@@ -178,7 +178,7 @@ main {
 .hero h1 {
     font-size: 4rem;
     margin-bottom: 1rem;
-    background: linear-gradient(135deg, #0bd458, #073a0f);
+    background: #0bd458;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     animation: gradient 8s ease infinite;

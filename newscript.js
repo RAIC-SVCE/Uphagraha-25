@@ -94,8 +94,7 @@ function toggleMenu() {
     setInterval(updateCountdown, 1000);
     updateCountdown();
   });
-  
-  
+
   // Form Handling
   const registerForm = document.querySelector(".register-form")
   if (registerForm) {

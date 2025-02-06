@@ -1102,7 +1102,7 @@ footer .copyright:first-of-type {
   @media (max-width: 768px) {
 
     .hero{
-      margin-top: 40px;
+      margin-top: 0px;
     }
 
     .format-timeline::before {
@@ -1161,14 +1161,11 @@ footer .copyright:first-of-type {
   
     /* Header */
     .hero {
-      margin-top: 50px;
-      padding: 1rem; /* Further reduced padding */
+      margin-top: 410rem;
+      padding: 0 1rem; /* Further reduced padding */
       text-align: center;
     }
-  
-    .main-logo{
-      margin-top: 150px;
-    }
+
     .hero h1 {
       font-size: 1.8rem; /* Smaller font size for mobile screens */
     }
@@ -1283,7 +1280,7 @@ footer .copyright:first-of-type {
     }
   }
   
-  @media (max-width: 320px) {
+  @media screen and (max-width: 320px) {
     /* Center align everything */
     body {
       display: flex;
@@ -1311,7 +1308,7 @@ footer .copyright:first-of-type {
   
     /* Header */
     .hero {
-      margin-top: 40px;
+      margin-top: 400rem;
       padding: 0.8rem; /* Further reduced padding */
       text-align: center;
     }
@@ -1426,3 +1423,16 @@ footer .copyright:first-of-type {
   
 /*event formate end*/  
 
+@media screen and (max-width:500px){
+  #home{
+    margin-top:5rem;
+  }
+}
+
+@media screen and (min-width:385px) and (max-width:400px){
+  .hero {
+    margin-top: 100px;
+    padding: 0 0rem; /* Further reduced padding */
+    text-align: center;
+  }
+}
